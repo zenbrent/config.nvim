@@ -2,6 +2,7 @@ let vimsettings = '~/.config/nvim/settings'
 let uname = system("uname -s")
 
 for fpath in split(globpath(vimsettings, '*.vim'), '\n')
+  " prefix a setting filename with _ to ignore it.
   if (fnamemodify(fpath, ':t') =~ "^_")
     echo "skipping " . fpath
     continue

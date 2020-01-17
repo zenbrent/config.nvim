@@ -27,6 +27,9 @@ if dein#load_state('/home/brent/.cache/dein')
   "call dein#add('Shougo/neosnippet.vim')
   "call dein#add('Shougo/neosnippet-snippets')
 
+  " Evaluate alternatives
+  call dein#add('tpope/vim-commentary')
+
   call dein#add('tpope/vim-surround')
   call dein#add('Lokaltog/vim-easymotion')
   call dein#add('scrooloose/nerdtree')

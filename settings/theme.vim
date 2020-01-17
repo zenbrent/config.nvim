@@ -1,3 +1,7 @@
+" To make tabs more readable, the label only contains the tail of the file
+" name and the buffer modified flag.
+set guitablabel=%M%t
+
 " " Something messes up the colors of popup menus so they're unreadable. The fix:
 " highlight Pmenu ctermbg=250 ctermfg=0
 " highlight PmenuSel ctermbg=255 ctermfg=8

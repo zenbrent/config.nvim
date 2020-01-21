@@ -1,10 +1,10 @@
 " from https://github.com/chemzqm/unite-location
 
-nnoremap <silent> <space>p  :<C-u>Denite -resume<CR>
-nnoremap <silent> <space>j  :call execute('Denite -resume -select=+'.v:count1.' -immediately')<CR>
-nnoremap <silent> <space>k  :call execute('Denite -resume -select=-'.v:count1.' -immediately')<CR>
-nnoremap <silent> <space>q  :<C-u>Denite -mode=normal -auto-resize quickfix<CR>
-nnoremap <silent> <space>l  :<C-u>Denite -mode=normal -auto-resize location_list<CR>
+nnoremap <silent> <Leader>p  :<C-u>Denite -resume<CR>
+nnoremap <silent> <Leader>j  :call execute('Denite -resume -select=+'.v:count1.' -immediately')<CR>
+nnoremap <silent> <Leader>k  :call execute('Denite -resume -select=-'.v:count1.' -immediately')<CR>
+nnoremap <silent> <Leader>q  :<C-u>Denite -mode=normal -auto-resize quickfix<CR>
+nnoremap <silent> <Leader>l  :<C-u>Denite -mode=normal -auto-resize location_list<CR>
 
 
 " Define mappings

@@ -5,6 +5,11 @@ map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
 
+
+" Create/close a tab
+nmap <Leader>tc  :tabnew <CR>
+nmap <Leader>tC  :tabclose <CR>
+
 """"""""""""""""
 " easymotion 
 

@@ -37,14 +37,19 @@ if dein#load_state('~/.cache/dein')
   call dein#add('kien/rainbow_parentheses.vim')
   call dein#add('guns/xterm-color-table.vim')
   call dein#add('airblade/vim-gitgutter')
+  call dein#add('editorconfig/editorconfig-vim')
   call dein#add('rhysd/git-messenger.vim', {
         \   'lazy' : 1,
         \   'on_cmd' : 'GitMessenger',
         \   'on_map' : '<Plug>(git-messenger',
         \ })
 
+  " Denite dark powered plugin to unite all interfaces.
   call dein#add('Shougo/denite.nvim')
+
   call dein#add('Shougo/defx.nvim')
+
+  " required for all Shougo's stuff to work on old vim
   if !has('nvim')
     Plug 'roxma/nvim-yarp'
     Plug 'roxma/vim-hug-neovim-rpc'
@@ -56,7 +61,6 @@ if dein#load_state('~/.cache/dein')
   """"""""""""""""
   " Plugins I've used before. Adding them back in as needed.
 
-  " editorconfig/editorconfig-vim
   " tpope/vim-unimpaired
   " tpope/vim-repeat
   " junegunn/vim-easy-align
@@ -92,8 +96,9 @@ endif
 
 
 " Quickly edit/reload the vimrc file
-nmap <silent> <leader>ve :e $MYVIMRC<CR>
-nmap <silent> <leader>vs :so $MYVIMRC<CR>
+" nmap <silent> <leader>ve :e $MYVIMRC<CR>
+nnoremap <silent> <leader>ve :tabnew<CR>:e $MYVIMRC<CR>:NERDTree $MYVIMRC<CR>
+nnoremap <silent> <leader>vs :so $MYVIMRC<CR>
 
 nmap <silent> <leader>ft :NERDTree<CR>
 

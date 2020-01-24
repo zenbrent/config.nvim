@@ -15,7 +15,8 @@ set tabstop=2 shiftwidth=2 softtabstop=2
 augroup vimrc_tabs
   au!
 
-  autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+  " autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+  autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
   autocmd Filetype coffee setlocal ts=2 sts=2 sw=2
   autocmd Filetype stylus setlocal ts=2 sts=2 sw=2
   autocmd Filetype scss setlocal autoindent noexpandtab tabstop=4 shiftwidth=4
